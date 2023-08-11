@@ -49,7 +49,7 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-
+        multiDexEnabled true
         manifestPlaceholders += [auth0Domain: "dev-36g1gfwhwyynsncw.us.auth0.com", auth0Scheme: "https"]
 
     }
