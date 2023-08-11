@@ -4,6 +4,16 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	key>CFBundleURLTypes</key>
+    	<array>
+    		<dict>
+    			<key>CFBundleTypeRole</key>
+    			<string>Editor</string>
+    			<key>CFBundleURLSchemes</key>
+    			<array>
+    				<string>com.example.auth0_authenication_project</string>
+    		</dict>
+    	</array>
 	<key>CFBundleDisplayName</key>
 	<string>Auth0 Authenication Project</string>
 	<key>CFBundleExecutable</key>

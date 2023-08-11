@@ -44,11 +44,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Credentials? _credentials;
 
   late Auth0 auth0;
-
+  final Auth0_Domain='dev-36g1gfwhwyynsncw.us.auth0.com';
+  final Auth0_Client_ID='LIgkZBqQJKXO3uFNqbgss8NOtHnK8m5C';
+  // final Auth0_Issuer='https://$Auth0_Domain';
   @override
   void initState() {
     super.initState();
-    auth0 = Auth0('dev-36g1gfwhwyynsncw.us.auth0.com', 'jx7lqQtfRFjp9rW3M5tNgHLAXoPnbnB6');
+    auth0 = Auth0(Auth0_Domain, Auth0_Client_ID);
   }
 
   @override
