@@ -50,7 +50,9 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
-        manifestPlaceholders += [auth0Domain: "dev-36g1gfwhwyynsncw.us.auth0.com", auth0Scheme: "https"]
+        manifestPlaceholders += [
+                appAuthRedirectScheme: "com.example.auth0_authenication_project",
+                auth0Domain: "dev-36g1gfwhwyynsncw.us.auth0.com", auth0Scheme: "https"]
 
     }
 
